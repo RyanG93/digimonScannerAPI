@@ -9,6 +9,7 @@ let digiScanner = document.querySelector("digi-Scanner")
 
 let logo = document.getElementById("showDigimon");
 
+
 function fetchSpace(e){
     e.preventDefault();
     let digimon = input.value;
@@ -27,6 +28,7 @@ function displayDigimon(digimon) {
     digitalMonstersList.appendChild(cardDiv); 
 }
 
+logo.addEventListener("click", fetchSpace, displayDigimon);
 
 
 
